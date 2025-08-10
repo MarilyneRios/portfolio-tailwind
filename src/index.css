@@ -59,8 +59,49 @@
 
 /***************************************/
 
-/* project : carrousselle*/
+/* carrousel avec perspective 3D */
+.carousel-3d {
+  perspective: 6000px; /* plus la valeur est grande, moins la 3D est prononcée */
+  transform-style: preserve-3d;
+}
 
+/* Élément interne du carrousel qui contient toutes les cartes */
+.carousel-inner {
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transition: transform 1s ease-in-out;
+  /* ⚠️ Cette ligne empêche la rotation manuelle JS de fonctionner */
+  /* animation: rotate-carousel 20s linear infinite; */
+}
+
+/* Pause de l'animation au survol - inutile si on supprime l'animation CSS */
+.carousel-inner:hover {
+  animation-play-state: paused;
+}
+
+/* Carte individuelle avec sa propre perspective */
+.carousel-item-3d {
+  transform-origin: center center;
+  transform-style: preserve-3d;
+}
+
+/* Classe utilitaire pour forcer le style preserve-3d */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Rotation horizontale à 180° */
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Cache la face arrière d'une carte */
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Animation CSS qui force une rotation infinie en sens anti-horaire fluide
+   → À retirer si on utilise React pour gérer la rotation 
 @keyframes rotate-carousel {
   0% {
     transform: rotateY(0deg);
@@ -68,36 +109,8 @@
   100% {
     transform: rotateY(-360deg);
   }
-}
+}*/
 
-@layer utilities {
-  .carousel-3d {
-    perspective: 6000px;
-    transform-style: preserve-3d;
-  }
-
-  .carousel-inner {
-    transform-style: preserve-3d;
-    transform-origin: center;
-    animation: rotate-carousel 20s linear infinite;
-  }
-
-   .carousel-item-3d {
-    transform-origin: center center 0px;
-    transform-style: preserve-3d;
-  }
-  .preserve-3d {
-    transform-style: preserve-3d;
-  }
-
-  .rotate-y-180 {
-    transform: rotateY(180deg);
-  }
-
-  .backface-hidden {
-    backface-visibility: hidden;
-  }
-}
 
 
 /***************************************/

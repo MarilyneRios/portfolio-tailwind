@@ -17,11 +17,13 @@ const About = () => {
       className="bg-gray-800 text-white py-20 min-h-screen flex flex-col justify-center items-center"
       id="about"
     >
-      <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <div className="flex flex-col md:flex-row items-center md:space-x-12">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24 ">
+        <div className="flex flex-col md:flex-row items-center md:space-x-">
           {/* left-part-cube-legend */}
-          <div id="left-part-cube-legend" className="mr-5 p-5">
-            {/* cube 3D */}
+ <div className="flex-1 flex flex-col items-center">
+        <div className="p-6 ">            
+          
+          {/* cube 3D */}
             <div
               className={`perspective-800 flex items-center justify-center -translate-y-20 ml-5 p-5`}
               style={{ height: "200px" }}
@@ -67,23 +69,25 @@ const About = () => {
                 </div>
               </div>
             </div>
-           
+           </div>
           </div>
 
-          {/* Right content */}
-          <div className="flex-1 ml-5">
-            <h2 className="text-4xl font-bold text-center mb-12">Qui suis-je ?</h2>
+          {/* Right-part-text-content */}
+            <div className="flex-1 border-[3px] border-zinc-300 rounded-lg bg-gray-900 shadow-lg p-8">
+            <h2 className="text-4xl font-bold text-center mb-8">Qui suis-je ?</h2>
             <p className="text-lg mb-8">
               Passionnée de développement d&apos;applications web et mobiles responsives.
             </p>
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-6">
               Je m&apos;efforce de créer des applications qui aident les utilisateurs de manière adaptée
               et efficace, tout en apportant des solutions innovantes.
             </p>
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-6">
               Vous pouvez consulter mon profil GitHub et LinkedIn en cliquant sur les icônes ci-dessous.
             </p>
-            <div className="mt-8 flex justify-center space-x-4">
+
+            {/* Links-réseaux-sociaux */}
+            <div className="mt-8 flex justify-center gap-6">
               <a
                 href="https://github.com/MarilyneRios"
                 target="_blank"
@@ -109,6 +113,7 @@ const About = () => {
                 <IoLogoCodepen size={70} />
               </a>
             </div>
+            {/* Btn-contact */}
             <div className="mt-8 flex justify-center">
               <ContactBtn />
             </div>

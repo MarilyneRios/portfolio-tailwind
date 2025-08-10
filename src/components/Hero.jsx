@@ -1,8 +1,8 @@
 import ContactBtn from "./ContactBtn";
 import CvBtn from "./CvBtn";
 import { useState, useEffect } from "react";
-import AboutImage from "../assets/back.jpg";
-import screen from "../assets/screen.jpg";
+//import AboutImage from "../assets/back.jpg";
+//import screen from "../assets/screen.jpg";
 
 
 const Hero = () => {
