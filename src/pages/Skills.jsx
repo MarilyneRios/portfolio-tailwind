@@ -24,7 +24,7 @@ import "react-multi-carousel/lib/styles.css";
 
 const Skills = () => {
   const responsive = {
-    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 4 },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 4},
     tablet: { breakpoint: { max: 1024, min: 768 }, items: 3 },
     mobile: { breakpoint: { max: 767, min: 0 }, items: 2 },
   };
@@ -37,7 +37,7 @@ const Skills = () => {
       <section className="min-h-screen flex flex-col justify-center items-center px-6 ">
 
       {/* Title */}
-      <h2 className="text-3xl font-bold mt-6">
+      <h2 className="text-3xl font-bold pt-6 mt-6">
         Mes compétences
       </h2>
 
@@ -71,7 +71,7 @@ const Skills = () => {
       </section>
 
       {/* Technologies */}
-      <section className="my-6 w-full mx-auto max-h-4xl hy-auto ">
+      <section className="my-6 w-3/4 mx-auto max-h-4xl hy-auto ">
         <h3 className="text-2xl font-semibold text-center mb-6">
           Outils et technologies
         </h3>
@@ -90,7 +90,7 @@ const Skills = () => {
             keyBoardControl
             customTransition="ease-in-out 0.7s"
             transitionDuration={700}
-            removeArrowOnDeviceType={["tablet", "mobile"]}
+            removeArrowOnDeviceType={["desktop","tablet", "mobile"]}
           >
             {[
               { Icon: FaReact, label: "React", color: "#61DAFB" },
@@ -125,7 +125,7 @@ const Skills = () => {
       {/* Projets complets */}
       <section className="text-center  ">
         <p className="text-2xl font-bold mt-3">Projets Complets</p>
-        <h3 className="text-2xl font-extrabold text-transparent 
+        <h3 className="text-2xl font-extrabold text-transparent mb-3
         bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
           3+
         </h3>
