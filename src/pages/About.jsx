@@ -18,10 +18,11 @@ const About = () => {
       id="about"
     >
       <div className="container mx-auto px-8 md:px-16 lg:px-24 ">
+
         <div className="flex flex-col md:flex-row items-center md:space-x-8 ">
 
           {/* left-part-cube-legend */}
-          <div className="flex-1 flex flex-col items-center justify-center  ">
+          <div className="flex-1 flex flex-col items-center justify-center mb-12 md:mb-0  ">
             <div className="p-6 ">
               {/* cube 3D */}
                 <div
