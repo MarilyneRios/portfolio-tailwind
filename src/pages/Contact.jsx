@@ -72,7 +72,7 @@ const Contact = () => {
 
           {/* Right - Image Flip */}
           <div className="flex-1 flex justify-center mt-10 md:mt-0">
-            <div className="w-80 h-80 group perspective">
+            <div className="w-64 h-64 md:w-80 md:h-80  group perspective ">
               <div
                 className="relative w-full h-full 
                 transform transition-transform duration-700 
