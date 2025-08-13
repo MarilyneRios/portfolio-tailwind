@@ -73,11 +73,14 @@ const Navbar = () => {
                 <a href="#project" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
                   Projets
                 </a>
+
               </div>
             </div>
           </div>
-          {/* Btn contacter en fin de div */}
-          <ContactBtn/>
+            {/* Btn contacter visible uniquement sur desktop */}
+            <div className="hidden sm:block">
+              <ContactBtn />
+            </div>
           <div>
 
           </div>
@@ -99,6 +102,9 @@ const Navbar = () => {
             </a>
             <a href="#project" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
               Projets
+            </a>
+            <a href="#contact" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+              Me contacter
             </a>
           </div>
         </div>
