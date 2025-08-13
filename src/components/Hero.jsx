@@ -72,7 +72,7 @@ const Hero = () => {
        */}
      
 
-      <h1 className="text-4xl font-bold">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug text-center px-4">
         {/* Affiche le texte animé : "Je m'appelle" */}
         <span className="wrap text-white">{text1}</span>
         {/* Affiche le texte animé : "Marilyne Rios" */}

@@ -31,10 +31,10 @@ const Skills = () => {
 
   return (
     <div
-      className="bg-sky-950 text-white h-screen flex flex-col align-item justify-center"
+      className="bg-sky-950 text-white min-h-screen flex flex-col align-item justify-center"
       id="skills"
     >
-      <section className="h-screen flex flex-col justify-center items-center px-6 ">
+      <section className="min-h-screen flex flex-col justify-center items-center px-6 ">
 
       {/* Title */}
       <h2 className="text-3xl font-bold mt-6">
@@ -71,22 +71,18 @@ const Skills = () => {
       </section>
 
       {/* Technologies */}
-      <section className="my-6 max-w-4xl mx-auto max-h-4xl hy-auto ">
+      <section className="my-6 w-full mx-auto max-h-4xl hy-auto ">
         <h3 className="text-2xl font-semibold text-center mb-6">
           Outils et technologies
         </h3>
-        <div className="bg-gray-900 rounded-lg border-[3px] border-zinc-300 h-40 shadow-lg p-4 pb-6 ">
+        <div className="bg-gray-900 rounded-lg border-[3px] border-zinc-300 min-h-[10rem] shadow-lg p-4 pb-6 ">
           <Carousel
             swipeable
             draggable
             showDots
             containerClass="pb-6" //hauteur des dots
             dotListClass="mt-6 flex justify-center"
-            responsive={{
-              desktop: { breakpoint: { max: 3000, min: 1024 }, items: 4 },
-              tablet: { breakpoint: { max: 1024, min: 768 }, items: 3 },
-              mobile: { breakpoint: { max: 767, min: 0 }, items: 2 },
-            }}
+            responsive={responsive}
             ssr
             infinite
             autoPlay
