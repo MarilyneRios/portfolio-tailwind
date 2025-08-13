@@ -1,8 +1,7 @@
 import ContactBtn from "./ContactBtn";
 import CvBtn from "./CvBtn";
 import { useState, useEffect } from "react";
-//import AboutImage from "../assets/back.jpg";
-//import screen from "../assets/screen.jpg";
+
 
 
 const Hero = () => {
@@ -69,23 +68,7 @@ const Hero = () => {
       id="home"
     >
       {/*
-      <div id="presentation" className="flex flex-row ">     
-        <div className="w-80 h-80 mb-5 group perspective">
-          <div className="relative w-full h-full transform transition-transform duration-700 preserve-3d group-hover:rotate-y-180 
-           hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,255,255,255.3)] active:translate-y-0 active:shadow-inner">
-            <img
-              src={AboutImage}
-              alt="Portrait recto"
-              className="absolute w-full h-full rounded object-cover backface-hidden"
-            />
-            <img
-              src={screen}
-              alt="Portrait verso"
-              className="absolute w-full h-full rounded object-cover transform rotate-y-180 backface-hidden"
-            />
-          </div>
-        </div>
-      </div>
+
        */}
      
 

@@ -24,10 +24,10 @@ const About = () => {
           <div className="flex-1 flex flex-col items-center justify-center  ">
             <div className="p-6 ">
               {/* cube 3D */}
-<div
-  className="perspective-800 flex items-center justify-center mx-auto p-5 "
-  style={{ height: "250px" }}
->
+                <div
+                  className="perspective-800 flex items-center justify-center mx-auto p-5 "
+                  style={{ height: "250px" }}
+                >
 
                 <div className={`cube ${activeFace ? activeFace : "spin"}`}>
                   <div

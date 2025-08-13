@@ -241,7 +241,7 @@ const toggleFlip = (id) => {
             <span
               key={idx}
               className={`block w-3 h-3 rounded-full ${
-                idx === normalizedIndex ? "bg-green-400" : "bg-gray-500"
+                idx === normalizedIndex ? "bg-sky-600" : "bg-gray-500"
               }`}
             />
           ))}
