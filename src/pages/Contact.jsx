@@ -1,6 +1,6 @@
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from "react-icons/fa";
 import AboutImage from "../assets/back.jpg";
-import portrait from "../assets/portraitPro.png";
+import portrait from "../assets/portraitcv.png";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
