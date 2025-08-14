@@ -97,13 +97,17 @@ const Project = () => {
 
   return (
     <div
-      className="bg-gray-800 text-white py-20 min-h-screen flex flex-col justify-center items-center"
+      className="bg-gray-800 text-white  min-h-screen flex flex-col justify-center items-center"
       id="project"
     >
 
-      <h2 className="text-4xl font-bold text-center my-6">My Projects</h2>
+      <h2 className="text-4xl font-bold text-center ">Mes Projets</h2>
 
-      <div className="bg-gray-900 text-white py-3 relative border-[3px] border-zinc-300 rounded-lg shadow-xl w-full max-w-4xl mx-auto px-6 min-h-[150px]">
+      <div className="
+      bg-gray-900 text-white  relative 
+       border-[3px] w-full max-w-4xl mx-auto px-6 min-h-[150px] py-3 mt-6
+       border-zinc-300 rounded-lg shadow-xl 
+       ">
         
 
         {/* --- Carrousel --- */}
