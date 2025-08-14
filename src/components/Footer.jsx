@@ -13,7 +13,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-2">Marilyne Rios</h3>
             <p className="text-gray-400">
               Dévelopeuse Full-Stack localisé en France, spécialisée en web et
-              software dévelopement.
+              mobile.
             </p>
           </div>
         </div>

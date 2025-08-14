@@ -90,7 +90,8 @@ const Contact = () => {
                 <img
                   src={portrait}
                   alt="Portrait verso"
-                  className="absolute w-full h-full rounded-lg 
+                  className="absolute w-full h-full 
+                   border-4 border-gray-800 rounded-lg 
                   object-cover transform rotate-y-180 backface-hidden"
                 />
               </div>
