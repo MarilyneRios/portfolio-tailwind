@@ -42,7 +42,7 @@ const Skills = () => {
       </h2>
 
       {/* Langages */}
-      <section className="my-6 ">
+      <section className="my-6">
         <h3 className="text-2xl font-semibold text-center my-6 ">
           Langages de programmation
         </h3>

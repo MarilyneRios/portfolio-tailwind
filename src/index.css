@@ -111,7 +111,22 @@
   }
 }*/
 
+/* caroussel skill */
 
+.react-multi-carousel-dot button {
+  background-color: gray !important; /* sky-700 */
+  border: none !important;
+  
+}
+
+.react-multi-carousel-dot--active button {
+  background-color: rgb(3 105 161) !important; /* même couleur active */
+  transform: scale(1.1);
+}
+
+.my-dots {
+  margin-top: 2.5rem; /* espace sous les icônes */
+}
 
 /***************************************/
 /* animation image du Hero.jsx*/
@@ -137,19 +152,3 @@
 
 /***********************************/
 
-/* caroussel skill */
-
-.react-multi-carousel-dot button {
-  background-color: gray !important; /* sky-700 */
-  border: none !important;
-  
-}
-
-.react-multi-carousel-dot--active button {
-  background-color: rgb(3 105 161) !important; /* même couleur active */
-  transform: scale(1.1);
-}
-
-.my-dots {
-  margin-top: 2.5rem; /* espace sous les icônes */
-}
